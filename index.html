@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Notas</h1>
+        <form id="notaForm">
+            <div class="form-group">
+                <label for="nombre">Nombre del Estudiante:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div id="preguntas" class="form-group">
+                <label for="pregunta1">Puntaje pregunta 1:</label>
+                <input type="number" id="pregunta1" name="pregunta1" min="0" max="3" required><br>
+                <label for="pregunta2">Puntaje pregunta 2:</label>
+                <input type="number" id="pregunta2" name="pregunta2" min="0" max="3" required><br>
+                <label for="pregunta3">Puntaje pregunta 3:</label>
+                <input type="number" id="pregunta3" name="pregunta3" min="0" max="3" required><br>
+                <label for="pregunta4">Puntaje pregunta 4:</label>
+                <input type="number" id="pregunta4" name="pregunta4" min="0" max="3" required><br>
+                <label for="pregunta5">Puntaje pregunta 5:</label>
+                <input type="number" id="pregunta5" name="pregunta5" min="0" max="3" required><br>
+                <label for="pregunta6">Puntaje pregunta 6:</label>
+                <input type="number" id="pregunta6" name="pregunta6" min="0" max="3" required><br>
+                <label for="pregunta7">Puntaje pregunta 7:</label>
+                <input type="number" id="pregunta7" name="pregunta7" min="0" max="3" required><br>
+                <label for="pregunta8">Puntaje pregunta 8:</label>
+                <input type="number" id="pregunta8" name="pregunta8" min="0" max="3" required><br>
+                <label for="pregunta9">Puntaje pregunta 9:</label>
+                <input type="number" id="pregunta9" name="pregunta9" min="0" max="3" required><br>
+                <label for="pregunta10">Puntaje pregunta 10:</label>
+                <input type="number" id="pregunta10" name="pregunta10" min="0" max="3" required><br>
+                <label for="pregunta11">Puntaje pregunta 11:</label>
+                <input type="number" id="pregunta11" name="pregunta11" min="0" max="3" required><br>
+                <label for="pregunta12">Puntaje pregunta 12:</label>
+                <input type="number" id="pregunta12" name="pregunta12" min="0" max="3" required><br>
+            </div>
+            <button type="button" class="btn" onclick="agregarAlumno()">Agregar</button>
+        </form>
+        <h2>📚 Resumen de Notas</h2>
+        <table id="tablaNotas">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntajes</th>
+                    <th>Puntaje Total</th>
+                    <th>Nota</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán las filas dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+
+
